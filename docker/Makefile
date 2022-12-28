@@ -1,9 +1,9 @@
 SYSTEM := $(shell uname -s)
 HOST := host.docker.internal
-DOCKER_REPO := gcr.io/moonrhythm-containers/velochain-blockscout
-APP_NAME := blockscout
+DOCKER_REPO := gcr.io/moonrhythm-containers
+APP_NAME := velochain-blockscout
 BS_CONTAINER_IMAGE := $(DOCKER_REPO)/$(APP_NAME):v4.1.5-beta
-BS_CONTAINER_NAME := blockscout
+BS_CONTAINER_NAME := velochain-blockscout
 PG_CONTAINER_IMAGE := postgres:13.6
 PG_CONTAINER_NAME := db
 THIS_FILE = $(lastword $(MAKEFILE_LIST))
