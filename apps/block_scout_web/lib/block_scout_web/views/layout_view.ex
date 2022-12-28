@@ -37,11 +37,11 @@ defmodule BlockScoutWeb.LayoutView do
   alias BlockScoutWeb.SocialMedia
 
   def logo do
-    "/images/rei_logo.svg"
+    "/images/nova_logo.svg"
   end
 
   def logo_footer do
-    "/images/rei_logo.svg"
+    "/images/nova_logo.svg"
   end
 
   def logo_text do
