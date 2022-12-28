@@ -1,6 +1,6 @@
 SYSTEM := $(shell uname -s)
 HOST := host.docker.internal
-DOCKER_REPO := asia-southeast1-docker.pkg.dev/reichain/docker
+DOCKER_REPO := gcr.io/moonrhythm-containers/velochain-blockscout
 APP_NAME := blockscout
 BS_CONTAINER_IMAGE := $(DOCKER_REPO)/$(APP_NAME):v4.1.5-beta
 BS_CONTAINER_NAME := blockscout
@@ -412,7 +412,7 @@ ifdef FETCH_REWARDS_WAY
 endif
 
 HAS_BLOCKSCOUT_IMAGE := $(shell docker images | grep -sw "${BS_CONTAINER_IMAGE} ")
-build: 
+build:
 	@echo "==> Checking for blockscout image $(BS_CONTAINER_IMAGE)"
 ifdef HAS_BLOCKSCOUT_IMAGE
 	@echo "==> Image exist. Using $(BS_CONTAINER_IMAGE)"
