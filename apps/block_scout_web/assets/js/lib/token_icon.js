@@ -1,5 +1,5 @@
 function getTokenIconUrl (chainID, addressHash) {
-  return `https://cdn.kururu.finance/coins/eth/${chainID}/${addressHash.toLowerCase()}`
+  return ''
 }
 
 function appendTokenIcon ($tokenIconContainer, chainID, addressHash, foreignChainID, foreignAddressHash, displayTokenIcons, size) {

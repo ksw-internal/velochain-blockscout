@@ -7245,7 +7245,7 @@ defmodule Explorer.Chain do
 
   @spec get_token_icon_url_by(String.t(), String.t()) :: String.t() | nil
   def get_token_icon_url_by(chain_id, address_hash) do
-    "https://cdn.kururu.finance/coins/eth/#{chain_id}/#{String.downcase(address_hash)}"
+    ""
   end
 
   defp from_block(options) do
